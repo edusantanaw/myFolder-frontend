@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main {
+    padding: 1em;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #313131;
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
