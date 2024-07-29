@@ -1,2 +1,12 @@
-::ng-deep form-component {
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    width: 90%;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

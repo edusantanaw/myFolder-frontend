@@ -1,8 +1,14 @@
 <div class="main login">
-    <form-component title="Login">
-        <div>
-            <label for="email">E-mail</label>
-            <input type="text" name="email" id="email">
+    <form-component title="Login" [formGroup]="authForm" >
+        <div class="field">
+            <label for="email">E-mail:</label>
+            <input ngModel="email" formControlName="email" class="input" type="email" name="email" id="email" placeholder="example@email.com">
         </div>
+        <div class="field">
+            <label for="password">Senha:</label>
+            <input ngModel="password" formControlName="password" class="input" type="password" name="password" id="password" placeholder="*******">
+        </div>
+        <span class="error" *ngIf="haveError()">{{error}}</span>
+        <button type="button" [disabled]="isLoading()" (click)="handleAuth()" class="button">Enviar</button>
     </form-component>
 </div>

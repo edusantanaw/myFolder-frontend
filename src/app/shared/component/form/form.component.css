@@ -1,8 +1,14 @@
 .form {
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
-    background-color: rgb(245, 245, 245);
-    color: #141414;
+    align-items: center;
+    width: 30em;
+    gap: 1em;
+    border-radius: 10px;
+    padding: 2em 1em;
+    background-color: rgb(66, 66, 66);
 }
 
+.form h2 {
+    font-size: 1.8em;
+}
